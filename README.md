@@ -1,4 +1,4 @@
-# Building-My-Cloud-Infrastructure-on-AWS-Step-by-Step1. Planning the Infrastructure
+<img width="1333" height="776" alt="image" src="https://github.com/user-attachments/assets/7197477b-1b44-4e6f-ab8e-f7a8729ef6c3" /># Building-My-Cloud-Infrastructure-on-AWS-Step-by-Step1. Planning the Infrastructure
 
 Before I got started, I took some time to think through the architecture I wanted to build:
 
@@ -33,6 +33,7 @@ After entering everything, I clicked "Create" and my VPC was ready to go.
 **Why this matters:** The VPC essentially creates my own isolated network within AWS. The CIDR block (10.0.0.0/16) gives me a large IP address range, which means I can create plenty of subnets down the line without running out of space.
 
 ![image.png](attachment:b6829c06-5f4b-4c62-af2c-6306954738d1:image.png)
+
 
 1. Creating Subnets
 
