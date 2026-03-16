@@ -1,4 +1,4 @@
-<img width="1333" height="776" alt="image" src="https://github.com/user-attachments/assets/7197477b-1b44-4e6f-ab8e-f7a8729ef6c3" /># Building-My-Cloud-Infrastructure-on-AWS-Step-by-Step1. Planning the Infrastructure
+# Building-My-Cloud-Infrastructure-on-AWS-Step-by-Step1. Planning the Infrastructure
 
 Before I got started, I took some time to think through the architecture I wanted to build:
 
