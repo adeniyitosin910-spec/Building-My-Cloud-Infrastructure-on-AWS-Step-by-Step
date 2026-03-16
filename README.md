@@ -63,7 +63,8 @@ Once it was created, I selected it from the list and clicked **"Attach to VPC."*
 
 **Why this matters:** The Internet Gateway is essentially the bridge between my VPC and the outside world. Without it, none of my resources in the public subnet would be able to send or receive traffic from the internet. Think of it like installing a front door to your house—without it, you can't get in or out. By attaching it to my VPC, I'm allowing any resources I place in the public subnet to communicate with the internet, which is essential for things like web servers or APIs that need to be publicly accessible.
 
-![Screenshot 2026-02-21 142208.png](attachment:7276a734-cb78-4033-b16a-0921c5e5cd39:Screenshot_2026-02-21_142208.png)
+![Screenshot 2026-02-21 142208.png]<img width="1315" height="394" alt="image" src="https://github.com/user-attachments/assets/0ad5e58c-8368-41fb-9d3d-889519fc675b" />
+
 
 1. Here's what I did:
 
@@ -80,7 +81,8 @@ Next, I added a route to actually connect to the internet:
 
 I intentionally **did not** add this route to my Private Subnet's route table. That way, anything in the private subnet stays locked down and can't directly communicate with the internet, which keeps my sensitive resources like databases much more secure.
 
-![Screenshot 2026-02-21 142120.png](attachment:c23ac742-9bb8-4dd8-a23a-9bbcd6be0712:Screenshot_2026-02-21_142120.png)
+![Screenshot 2026-02-21 142120.png]<img width="1349" height="511" alt="image" src="https://github.com/user-attachments/assets/7ed6f0ac-1aae-45ed-a1d5-9c50003e8f62" />
+
 
 1. **Create flow log**
 
@@ -165,7 +167,8 @@ Then I configured the rules:
 
 **Why this matters:** Security groups are like bouncers at the door of your server. They decide who gets in and what can go out. By limiting SSH access to just my IP, I'm making sure no one else can try to break into my machine. And by allowing HTTP from anywhere, I'm making sure visitors can actually see my site.
 
-![Screenshot 2026-02-21 142446.png](attachment:4319c6a0-7d41-4c38-af82-0538764bddf5:Screenshot_2026-02-21_142446.png)
+![Screenshot 2026-02-21 142446.png]<img width="1352" height="709" alt="image" src="https://github.com/user-attachments/assets/fb3b07ca-bc64-445e-bf50-804e6f2bd14f" />
+
 
 1. **Launching an EC2 Instance**
 
@@ -189,7 +192,8 @@ Finally, I hit **Launch**, and AWS prompted me to download a **key pair**. This 
 
 **Why this matters:** The EC2 instance is the heart of my cloud infrastructure. It's the actual virtual machine where I can run applications, host websites, or do pretty much anything I'd do on a physical server—except it's all in the cloud. The public IP means I can connect to it from anywhere, whether I'm SSH-ing in from my terminal (on Linux) or using Remote Desktop (on Windows). It's like having my own computer running 24/7 in Amazon's data center.
 
-![Screenshot 2026-02-21 143022.png](attachment:3c063854-a1e8-4075-a86e-0827a9744791:Screenshot_2026-02-21_143022.png)
+![Screenshot 2026-02-21 143022.png]<img width="1350" height="817" alt="image" src="https://github.com/user-attachments/assets/a0a0e864-9a10-4a7b-92b1-4f8fc0d046bc" />
+
 
 1. Assigning an Elastic IP (Optional but Recommended)
 
