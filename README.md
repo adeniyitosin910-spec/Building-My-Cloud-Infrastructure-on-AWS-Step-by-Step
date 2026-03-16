@@ -48,7 +48,8 @@ I decided to create two subnets to keep things organized:
 
 **Why this matters:** The public subnet can communicate with the internet, while the private subnet stays locked down internally. This separation adds an extra layer of security to my infrastructure.
 
-![Screenshot 2026-02-21 142120.png](attachment:c23ac742-9bb8-4dd8-a23a-9bbcd6be0712:Screenshot_2026-02-21_142120.png)
+![Screenshot 2026-02-21 142120.png]<img width="1349" height="511" alt="image" src="https://github.com/user-attachments/assets/a1317a60-a037-4080-b7ae-cf2a3ca7867d" />
+
 
 1. Attaching an Internet Gateway
 
